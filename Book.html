@@ -3,26 +3,49 @@
     <head>
          <meta charset="UTF-8">
         <title>
-            contact
+           Ethiopian Cereal crops - Contact
         </title>
     </head>
     <body>
+
+        <header>
+             <h1>Book or Request Cereal Products</h1>
+    <p>Request your favourite Ethiopian cereal products.</p>
+        </header>
+        <nav>
         <a href="Home.html" target="_blank">Home</a>
         <a href="Product.html">Product</a>
         <a href="Book.html">Book</a>
         <a href="Contact.html">Contact</a> 
+        </nav>
     </body>
     <body>
         <h1>Booking form</h1>
         <form>
-            <label for="firstname">Name:</label>
-            <input type="text" id="firstname" name="firstname"><br><br>
+            <label for="firstname"> First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required><br><br>
             <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname"><br><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required><br><br>
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
+            <input type="tel" id="phone"
+            placeholder="+251970364825"
+            pattern="^\+?[0-9]{1,3}[- ]?[0-9]{3}[- ]?[0-9]{3,4}[- ]?[0-9]{3,4}$"
+            required
+        ><br><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="cereal">Select Cereal:</label><br>
+
+                <select id="cereal" name="Cereal">
+                    <option value="Teff">Teff</option>
+                    <option value="Maize">Maize</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Barley">Barley</option>
+                    <option value="Sorghum">Sorghum</option>
+                </select><br><br>
+                <label for="quantity">Quantity in Kilograms:</label><br>
+                <input type="number" id="quantity"
+                       name="Quantity" min="1" required><br><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
             <input type="submit" value="Submit">
